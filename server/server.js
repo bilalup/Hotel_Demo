@@ -10,7 +10,7 @@ async function start() {
   try {
     await connectDB();
     app.listen(PORT, () => {
-      console.log(`[server] Aurelia Hotel API running on http://localhost:${PORT}`);
+      console.log(`[server] Aurelia Hotel API running on ${PORT}`);
     });
   } catch (err) {
     console.error("[server] Failed to start:", err);
